@@ -94,6 +94,9 @@ Resources:
         Timeout: 5
         UnhealthyThreshold: 5
       Listeners:
+        - InstancePort: 2181
+          LoadBalancerPort: 2181
+          Protocol: TCP
         - InstancePort: 8181
           LoadBalancerPort: 8181
           Protocol: TCP
